@@ -42,13 +42,19 @@ try:
         if e.type == pygame.KEYDOWN:
             if e.type == pygame.K_r:
                 if e.type == pygame.MOUSEBUTTONDOWN:
-                    color = (255,0,0)
+                    color = ((255,0,0))
                     pygame.draw.circle(screen, color, e.pos, radius)
                     draw_on = True
                 pygame.display.update()
             if e.type == pygame.K_g:
                 if e.type == pygame.MOUSEBUTTONDOWN:
-                    color = (clr)
+                    color = ((0,255,0))
+                    pygame.draw.circle(screen, color, e.pos, radius)
+                    draw_on = True
+                pygame.display.update()
+            if e.type == pygame.K_y:
+                if e.type == pygame.MOUSEBUTTONDOWN:
+                    color = ((244, 232, 104))
                     pygame.draw.circle(screen, color, e.pos, radius)
                     draw_on = True
                 pygame.display.update()
